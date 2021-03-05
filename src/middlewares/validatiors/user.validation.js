@@ -1,4 +1,4 @@
-const Joi = require('Joi');
+import Joi from 'Joi';
 
 exports.validate = (data) => {
     const userSchemaValidation = Joi.object({
