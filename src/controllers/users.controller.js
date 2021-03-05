@@ -2,7 +2,7 @@ const User = require('../models/user.model');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const config = require('../configs');
-import userSchemaValidation from "../middlewares/validatiors/user.validation"
+const userSchemaValidation = require('../middlewares/validatiors/user.validation');
 
 exports.register = (req, res) => {
     
