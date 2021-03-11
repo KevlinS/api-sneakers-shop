@@ -14,7 +14,7 @@ module.exports = {
         }
     },
     Mutation: {
-        createProduct: (parent, args) => {
+        createOrder: (parent, args) => {
             const newOrder = new Order({
                 amountTotal: args.amountTotal,
                 user: args.user,

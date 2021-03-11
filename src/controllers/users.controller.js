@@ -91,7 +91,8 @@ exports.login = (req,res) => {
         if(!passwordIsValid) {
             res.status(401).send({
                 auth: false,
-                token: null
+                token: null,
+		message: "password invalid"
             })
         }
         let userToken = jwt.sign(

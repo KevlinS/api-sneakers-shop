@@ -14,14 +14,13 @@ module.exports = {
     },
     Mutation: {
         createProduct: (parent, args) => {
-            const newProduct = new Product({
-                title: args.title,
-                price: args.price,
-                description: args.description
-            });
-
-            return newProduct.save();
-        },
+      	const newProduct = new Product({
+        	title: args.title,
+       		price: args.price,
+        	description: args.description
+      	});
+      	return newProduct.save();
+    	},
         updateProduct: (parent, args) => {
             return Product.findOneAndUpdate({id:args.id, title: args.title})
         },
