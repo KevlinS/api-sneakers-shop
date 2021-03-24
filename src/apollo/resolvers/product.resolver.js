@@ -17,7 +17,8 @@ module.exports = {
       	const newProduct = new Product({
         	title: args.title,
        		price: args.price,
-        	description: args.description
+        	description: args.description,
+            image: args.image
       	});
       	return newProduct.save();
     	},

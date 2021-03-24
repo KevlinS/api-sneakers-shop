@@ -1,3 +1,4 @@
+const { gqlPluckFromCodeStringSync } = require('@graphql-tools/graphql-tag-pluck');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
@@ -11,6 +12,9 @@ const productSchema = new Schema({
     },
     price: {
         type: Number
+    },
+    image: {
+        type: String
     }
 }, { timestamps: true })
 
