@@ -6,7 +6,8 @@ exports.validate = function (data) {
         lastName: Joi.string().required(),
         email: Joi.string().email().required(),
         isAdmin: Joi.boolean().required(),
-        age: Joi.number().required(),
+        telephone: Joi.number().required(),
+        adresse: Joi.string().required(),
         password: Joi.string().regex(/^[a-zA-Z0-9]{3,30}$/)
     });
     return userSchemaValidation.validate(data);

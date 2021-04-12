@@ -15,7 +15,8 @@ exports.register = (req, res) => {
 				lastName: req.body.lastName,
 				email: req.body.email,
                 isAdmin: req.body.isAdmin,
-                age: req.body.age
+                telephone: req.body.telephone,
+                adresse: req.body.adresse
 			});
 
    

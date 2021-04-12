@@ -16,15 +16,18 @@ const userSchema = new Schema({
     lastName: {
         type: String
     },
+    telephone: {
+        type: Number
+    },
+    adresse: {
+        type: String
+    },
     email: {
         type: String,
         unique: true
     },
     isAdmin: {
         type: Boolean
-    },
-    age: {
-        type: Number
     }
 }, { timestamps: true });
 
