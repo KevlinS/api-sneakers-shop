@@ -4,7 +4,7 @@ exports.createOrder = (req, res) => {
 
 
     const order = new Order({
-        amountTotal: req.body.totalAmount,
+        amountTotal: req.body.amountTotal,
         user: req.body.user,
         products: req.body.products
     })
