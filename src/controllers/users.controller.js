@@ -51,6 +51,18 @@ exports.register = (req, res) => {
         })
 }
 
+exports.updateUser = (req, res) => {
+    // let hashedPassword = bcrypt.hashSync(req.body.password,10);
+    // req.body.password = hashedPassword;
+	User.findByIdAndUpdate(req.params.id, req.body, (err, user) => {
+		if(err){
+			console.log(err);
+		}
+       
+		res.send(user);
+	});
+}
+
 exports.getAllUser = (req, res) => {
 	User.find((err, user) => {
 		if(err){

@@ -10,7 +10,7 @@ router.post('/login', users.login);
 router.get('/users', users.getAllUser);
 router.get('/logout', users.logout);
 router.get('/user/:id', verifyToken, users.getUser);
-
+router.put('/user/:id', users.updateUser);
 
 
 module.exports = router;
